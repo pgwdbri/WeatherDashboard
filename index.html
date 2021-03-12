@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" ></script>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <div class="row"> 
+        <div class="col"> 
+            <h1>Check the Weather</h1>
+            <h2>Enter the name of a city</h2>
+            <div class="input"> 
+                <input id="searchCity" type="text" class="input">
+                <button id="searchBtn" class="btn btn-primary" type="button">Search</button>
+            </div>
+        <div class="history-unstyled">
+            Search History
+        </div>
+        <div class="card"> 
+            <ul class="list"></ul>
+        </div> 
+
+
+        </div> 
+        <!--This is where the weather info will go/be place when generated-->
+        <div class="column"> 
+            <div id="currentCity"></div>
+        </div> 
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>  
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
